@@ -1,8 +1,356 @@
-<!DOCTYPE html>
-<html>
-	<body style="display: flex; justify-content: center">
-		<a href="https://github.com/nsfw-filter/nsfw-filter">
-    			<img alt="logo" src="https://raw.githubusercontent.com/nsfw-filter/nsfw-filter/master/demo/images/preview.png">
-		</a>
-	</body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NSFW Filter- Block NSFW content using AI</title>
+    <meta name="description" content="NSFW Filter is a web extension to block NSFW content using AI" />
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
+</head>
+
+<body>
+
+    <!--navigation-->
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top sticky-navigation">
+        <a class="navbar-brand" href="index.html">
+            NSFW Filter
+        </a>
+        <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span data-feather="menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contribute">Contribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--hero header-->
+    <section class="py-6 py-md-7" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8 mx-auto text-center">
+                    <h1>NSFW Filter Web Extension</h1>
+                    <p class="lead mt-3 mb-4">NSFW Filter web extension <strong>blocks NSFW content</strong> using AI.
+                    </p>
+                    <a href="https://chrome.google.com/webstore/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
+                        class="btn btn-primary d-inline-flex flex-row align-items-center">
+                        <em class="mr-2" data-feather="chrome" height="20" width="20"></em>
+                        Add to Chrome
+                        <small class="ml-2">(It's free)</small>
+                    </a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/nsfw-filter/"
+                        class="btn btn-secondary d-inline-flex flex-row align-items-center">
+                        <img class="mr-2" src="./img/firefoxbrowser.svg" height="20" width="20"></em>
+                        Add to Firefox
+                        <small class="ml-2">(It's free)</small>
+                    </a>
+                    <div class="rating-stars mt-4">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="text-muted small">
+                        (10+ <a href="https://addons.mozilla.org/en-US/firefox/addon/nsfw-filter/reviews/" class="text-muted">reviews</a> by users)
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-9 mx-auto text-center">
+                    <img class="img-fluid img-raised d-block mx-auto rounded" src="img/demo.gif" alt="Demo" />
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-9 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <div class="media d-flex align-items-center flex-row justify-content-center">
+                                <span class="text-muted mr-3" data-feather="chrome" width="40" height="40"></span>
+                                <div class="media-body">
+                                    <h4 class="text-muted mb-1 d-block odometer">1000</h4>
+                                    <span class="text-muted small-xl">chrome installations</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="media d-flex align-items-center flex-row justify-content-center">
+                                <span class="text-muted mr-3" data-feather="lock" width="40" height="40"></span>
+                                <div class="media-body">
+                                    <h4 class="text-muted mb-1 d-block odometer-video">112,987</h4>
+                                    <span class="text-muted small-xl">images blocked</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6 mx-auto mt-4 mt-md-0">
+                            <div class="media d-flex align-items-center flex-row justify-content-center">
+                                <span class="text-muted mr-3" data-feather="heart" width="40" height="40"></span>
+                                <div class="media-body">
+                                    <div class="rating-stars inverse mb-1">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="text-muted small-xl">10+ reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- press section -->
+    <section class="py-6 bg-light" id="press">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h3 class="display-4">Really fast and does what it says.</h3>
+                    <p class="text-muted">&mdash; Reddit User</p>
+                </div>
+            </div>
+            <div class="row press mt-5">
+                <div class="col-12 text-muted small-xl text-uppercase text-center mb-5"><strong>Featured in</strong>
+                </div>
+                <div class="press-item col-lg-4 col-md-4 col-4"><a href="https://www.producthunt.com/posts/nsfw-filter"><img class="img-fluid"
+                            src="img/press/press-1.svg" alt=""></a></div>
+                <div class="press-item col-lg-4 col-md-4 col-4"><a href="https://hackernoon.com/nsfw-filter-introduction-building-a-safer-internet-using-ai-jq1e3u2f"><img class="img-fluid"
+                            src="img/press/press-2.svg" alt=""></a></div>
+                <div class="press-item col-lg-4 col-md-4 col-4"><a href="https://fuchsiandroid.com/index.php/2020/08/03/nsfw-filter-a-must-have-plugin-for-the-office-which-uses-ai-to-filter-adult-nsfw-contentchrome-firefox/"><img class="img-fluid"
+                            src="img/press/press-3.svg" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="py-6" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2>View what you want</h2>
+                    <p class="lead text-muted">NSFW Filter allows you to block innapropriate, Not-Safe-For-Work content,
+                        protecting you online.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="nav flex-column nav-tabs nav-features" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link active" id="v-tab1-tab" data-toggle="tab" href="#v-tab1" role="tab"
+                            aria-controls="v-tab1" aria-selected="true">
+                            <div class="card card-body">
+                                <h6>Powered by AI</h6>
+                                We use SoTA AI model to detect NSFW content.
+                            </div>
+                        </a>
+                        <a class="nav-link" id="v-tab2-tab" data-toggle="tab" href="#v-tab2" role="tab"
+                            aria-controls="v-tab2" aria-selected="false">
+                            <div class="card card-body">
+                                <h6>Blazing fast</h6>
+                                Works without any backend servers by running everything in your browser.
+                            </div>
+                        </a>
+                        <a class="nav-link" id="v-tab3-tab" data-toggle="tab" href="#v-tab3" role="tab"
+                            aria-controls="v-tab3" aria-selected="false">
+                            <div class="card card-body">
+                                <h6>Data privacy</h6>
+                                We don't collect user data or your browsing details ensuring your privacy.
+                            </div>
+                        </a>
+                        <a class="nav-link" id="v-tab4-tab" data-toggle="tab" href="#v-tab4" role="tab"
+                            aria-controls="v-tab4" aria-selected="false">
+                            <div class="card card-body">
+                                <h6>Open-source and free</h6>
+                                We are open-source and free and it always will be.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 my-auto">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-tab1" role="tabpanel" aria-labelledby="v-tab1-tab">
+                            <img src="img/feature-1.jpg" class="img-fluid d-block mx-auto" alt="Feature 1">
+                        </div>
+                        <div class="tab-pane fade" id="v-tab2" role="tabpanel" aria-labelledby="v-tab2-tab">
+                            <img src="img/feature-2.jpg" class="img-fluid d-block mx-auto" alt="Feature 2">
+                        </div>
+                        <div class="tab-pane fade" id="v-tab3" role="tabpanel" aria-labelledby="v-tab3-tab">
+                            <img src="img/feature-3.jpg" class="img-fluid d-block mx-auto" alt="Feature 3">
+                        </div>
+                        <div class="tab-pane fade" id="v-tab4" role="tabpanel" aria-labelledby="v-tab4-tab">
+                            <img src="img/feature-4.jpg" class="img-fluid d-block mx-auto" alt="Feature 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--pricing section-->
+    <section class="pt-6 bg-light" id="contribute">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2>Help us out</h2>
+                    <p class="lead text-muted">
+                        We are free and open-source. See how you can help.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-9 mx-auto">
+                    <div class="card-group pricing-table">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title pt-3">Sponsor</h5>
+                                <div class="text-muted lead mt-4">Why?</div>
+                                <ul class="list-unstyled pricing-list">
+                                    <li>We are free</li>
+                                    <li>We are open-source</li>
+                                    <li>Help the development </li>
+                                </ul>
+                                <a href="https://www.patreon.com/bePatron?u=41162696" class="m-2 btn btn-secondary d-inline-flex flex-row align-items-center">
+                                    <img class="mr-2" src="./img/patreon.png" height="20" width="20"></img>
+                                    Become a PATRON
+                                </a>
+                                <a href="https://opencollective.com/nsfwfilter/donate" class="m-2 btn btn-dark d-inline-flex flex-row align-items-center">
+                                    <img class="mr-2" src="./img/open_collective.png" height="20" width="20"></img>
+                                    Donate to our collective
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white pt-3">Contribute</h5>
+                                <div class="text-muted lead mt-4">How?</div>
+                                <ul class="list-unstyled text-light pricing-list">
+                                    <li>Write code</li>
+                                    <li>Write docs</li>
+                                    <li>Share ideas</li>
+                                    <li>Share with others</li>
+                                </ul>
+                                <a href="https://github.com/nsfw-filter/nsfw-filter" class="m-2 btn btn-light d-inline-flex flex-row align-items-center">
+                                    <img class="mr-2" src="./img/github.png" height="20" width="20"></img>
+                                    Contribute on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq section -->
+    <section class="pt-6 bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="text-muted text-center">Reach out to us</h5>
+                            <div class="row text-center my-5">
+                                <div class="col-lg-6 col-md-8 mx-auto">
+                                    <div class="lead">Have any queries?</div>
+                                    <p class="text-muted">You can reach out to us via our Slack channel.</p>
+                                    <a href="https://join.slack.com/t/nsfwfilter/shared_invite/zt-gt1lgdiv-K2VR~UVUxwaTPWCLSmDiug" class="btn btn-primary btn-sm">
+                                        Join Slack Channel
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer / contact-->
+    <footer class="py-6 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-white">About NSFW Filter</h5>
+                    <p class="text-muted">NSFW Filter is a free and open-source initiative.</p>
+                    <ul class="list-inline social social-rounded social-sm">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/nsfw-filter/nsfw-filter"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.producthunt.com/posts/nsfw-filter?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-nsfw-filter"><i class="fa fa-product-hunt"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://towardsdatascience.com/building-a-safer-internet-for-everyone-using-ai-175df5e02cee"><i class="fa fa-medium"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:emailnsfwfilter@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ml-auto">
+                    <h5 class="text-white">Sponsor</h5>
+                    <ul class="list-unstyled mt-4">
+                        <li><a href="https://www.patreon.com/bePatron?u=41162696">Patreon</a></li>
+                        <li><a href="https://opencollective.com/nsfwfilter/donate">Open Collective</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center">
+                    <p class="text-white">
+                        <span data-feather="message-circle" width="40" height="40"></span>
+                    </p>
+                    <h5 class="text-white">Need Help?</h5>
+                    <p class="text-muted mt-4">
+                        Send us an email at <a href="mailto:emailnsfwfilter@gmail.com">emailnsfwfilter@gmail.com</a> or the <a href="https://join.slack.com/t/nsfwfilter/shared_invite/zt-gt1lgdiv-K2VR~UVUxwaTPWCLSmDiug">Slack Channel</a> if you have any questions. We'll help
+                        you out.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-muted text-center small-xl">
+                    &copy; 2020 NSFW Filter - <a href="https://github.com/nsfw-filter/nsfw-filter/blob/master/LICENSE">GNU Public License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--scroll to top-->
+    <div class="scroll-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.5.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
