@@ -43,7 +43,7 @@ $(function () {
     });
 
     //odemter init for videos
-    var current = 112987;
+    var current = 245671;
     var el = document.querySelector('.odometer-video');
     odo = new Odometer({
         el: el,
