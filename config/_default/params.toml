@@ -2,8 +2,8 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/logo.png"
-logo_darkmode = "images/logo-w.png"
+logo = "images/logo.svg"
+logo_darkmode = "images/logo-w.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "180px"
@@ -12,8 +12,8 @@ logo_webp = true
 # logo text will only show when logo is missing.
 logo_text = "Bigspring"
 # theme-mode
-theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
+theme_switcher = false
+theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
@@ -36,8 +36,9 @@ preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gi
 # Navigation button
 [navigation_button]
 enable = true
-label = "Get a Demo"
-link = "get-demo/"
+label = "Support on Patreon"
+icon = "fa-brands fa-patreon"
+link = "https://www.patreon.com/nsfwfilter"
 
 # Crisp Chat
 [crisp_chat]
@@ -83,7 +84,7 @@ mastodon = "" # Your verification code
 
 # cookies
 [cookies]
-enable = true
+enable = false
 expire_days = 2
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
