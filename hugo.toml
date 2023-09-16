@@ -1,10 +1,3 @@
-# DON'T REMOVE THIS FILE.
-# This file is for render site varibles and plugins
-#
-# The actual configuration files are stored in the `config/_default/` folder.
-
-######################### site variables ##############################
-# customize your color and font from here.
 [params.variables]
 color_primary = "#0AA8A7"
 color_secondary = "#376f92"
@@ -23,11 +16,8 @@ white = "#fff"
 light = "#EDF6F5"
 dark = "#1b2229"
 
-# font variables
-# base font size for full website, 
-font_size = "16px" # default is 16px
+font_size = "16px"
 
-# Font Scale Sizes
 # "minorSecond": 1.067,
 # "majorSecond": 1.125,
 # "minorThird": 1.2,
@@ -36,18 +26,13 @@ font_size = "16px" # default is 16px
 # "augmentedFourth": 1.414,
 # "perfectFifth": 1.5,
 # "goldenRatio": 1.618
-font_scale = "1.25" # default is "majorThird": 1.25
+font_scale = "1.25"
 
-# go to https://fonts.google.com/ to find the font you want to use. select your font and copy only the bold part from the URL. and paste it here.
-# example: "Work+Sans:wght@400;500;600"
 font_primary = "Urbanist:wght@500;600;700"
-font_primary_type = "sans-serif"           # [serif/sans-serif]
+font_primary_type = "sans-serif"
 font_secondary = "Poppins:wght@400;500"
-font_secondary_type = "sans-serif"         # [serif/sans-serif]
-font_icon = "Font Awesome 6 Free"          # https://fontawesome.com/v5.15/icons/
-
-
-############################# Plugins ##############################
+font_secondary_type = "sans-serif"
+font_icon = "Font Awesome 6 Free"
 
 # CSS Plugins
 [[params.plugins.css]]
