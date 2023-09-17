@@ -41,16 +41,13 @@ author = "Navendu Pottekkat"
 image = "images/logo.svg"                           # this image will be used as fallback if a page has no image of its own
 
 [plausible]
-enable = false
-domain = ""
+enable = true
+domain = "nsfw-filter.com"
 
 # site verifications
 [site_verification]
 google = ""
-bing = ""  
-baidu = ""
-facebook = ""
-mastodon = ""
+bing = ""
 
 # cookies
 [cookies]

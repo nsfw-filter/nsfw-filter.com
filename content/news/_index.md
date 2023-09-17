@@ -1,7 +1,6 @@
 ---
-title: "Latest News"
-subtitle: "Read all latest news posts"
-# meta description
-description: "Read all latest news posts"
+title: "News"
+subtitle: "Read latest news in the internet about NSFW Filter"
+description: "Read latest news in the internet about NSFW Filter"
 draft: false
 ---
