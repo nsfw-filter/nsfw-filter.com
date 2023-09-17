@@ -20,9 +20,9 @@ theme_copyright = true
 copyright = "Copyright © (2020-2023) by NSFW Filter Maintainers"
 
 footer_menu_left = "Directory"
-footer_menu_middle = "Products"
-footer_menu_right = "Support"
-footer_content = "Test"
+footer_menu_middle = "Directory"
+footer_menu_right = "Directory"
+footer_content = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
 
 [preloader]
 enable = true
