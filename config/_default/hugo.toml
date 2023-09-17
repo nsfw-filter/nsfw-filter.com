@@ -5,6 +5,8 @@ timeZone = "America/New_York"
 paginate = 6
 summaryLength = 10
 
+disableKinds = ["taxonomy"]
+
 [module]
 [[module.mounts]]
 source = "assets"

@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- checking news -->
-{{ if or (or (eq .Section "post") (eq .Section "posts") (eq .Section "news")) (or (eq .Section "categories") (eq .Section "tags") )}}
+{{ if or (or (eq .Section "post") (eq .Section "posts") (eq .Section "news")) (or (eq .Section "categories") )}}
 
 <section class="section">
   <div class="container">

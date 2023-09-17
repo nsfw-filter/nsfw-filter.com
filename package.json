@@ -1,8 +1,8 @@
 {
-  "name": "bigspring",
-  "version": "3.2.0",
-  "license": "UNLICENSED",
-  "author": "gethugothemes",
+  "name": "nsfw-filter-website",
+  "version": "2.0.0",
+  "license": "GPL-3.0-only",
+  "author": "Navendu Pottekkat",
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
