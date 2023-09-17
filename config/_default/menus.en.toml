@@ -162,7 +162,7 @@ url = "terms-conditions/"
 weight = 24
 
 [[main]]
-name = "Contact"
+name = "News"
 url = "contact/"
 weight = 30
 

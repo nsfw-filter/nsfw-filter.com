@@ -9,33 +9,6 @@
       </a>
 
       <div class="d-flex align-items-center">
-        <!-- Language List -->
-        {{ if .IsTranslated }}
-        <select class="me-3 border-0 d-inline-block d-lg-none" onchange="location = this.value;">
-          {{ $siteLanguages := site.Languages}}
-          {{ $pageLang := .Page.Lang}}
-          {{ range .Page.AllTranslations }}
-          {{ $translation := .}}
-          {{ range $siteLanguages }}
-          {{ if eq $translation.Lang .Lang }}
-          {{ $selected := false }}
-          {{ if eq $pageLang .Lang}}
-          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}
-          </option>
-          {{ else }}
-          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </select>
-        {{ end }}
-        <!-- navbar toggler -->
-        <button aria-label="navbar toggler" class="navbar-toggler border-0 h4 mb-0" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#navigation">
-          <i class="fas fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-
         {{ if site.Params.theme_switcher }}
         <div class="theme-switcher d-inline-block d-lg-none">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" width="20" height="20" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#000">
@@ -88,28 +61,6 @@
           {{ end }}
           {{ end }}
         </ul>
-
-        <!-- Language List -->
-        {{ if .IsTranslated }}
-        <select class="me-1 border-0 d-none d-lg-inline-block" id="select-language" onchange="location = this.value;">
-          {{ $siteLanguages := site.Languages}}
-          {{ $pageLang := .Page.Lang}}
-          {{ range .Page.AllTranslations }}
-          {{ $translation := .}}
-          {{ range $siteLanguages }}
-          {{ if eq $translation.Lang .Lang }}
-          {{ $selected := false }}
-          {{ if eq $pageLang .Lang}}
-          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}
-          </option>
-          {{ else }}
-          <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </select>
-        {{ end }}
 
         {{ if site.Params.navigation_button.enable }}
         <!-- navigation btn -->
