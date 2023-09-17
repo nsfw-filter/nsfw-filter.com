@@ -1,0 +1,73 @@
+baseURL = "https://nsfw-filter.com"
+title = "NSFW Filter - Block NSFW content using AI"
+theme = "bigspring-hugo"
+timeZone = "America/New_York"
+paginate = 6
+summaryLength = 10
+
+disableKinds = ["taxonomy"]
+
+[module]
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "hugo_stats.json"
+target = "assets/watching/hugo_stats.json"
+
+[build]
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/.*\.(js|ts|jsx|tsx)'
+target = '(js|scripts|javascript)'
+[[build.cachebusters]]
+source = 'assets/.*\.(css|sass|scss)$'
+target = '(css|styles|scss|sass)'
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = '(css|styles|scss|sass)'
+[[build.cachebusters]]
+source = 'assets/.*\.(.*)$'
+target = '$1'
+
+[outputs]
+home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+[imaging]
+# See https://github.com/disintegration/imaging
+quality = 90
+resampleFilter = "lanczos"
+
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 5
+ordered = true
+
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
+
+[outputFormats]
+[outputFormats.WebAppManifest]
+mediaType = "application/manifest+json"
+rel = "manifest"

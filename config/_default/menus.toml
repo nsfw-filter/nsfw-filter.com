@@ -1,0 +1,25 @@
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "News"
+url = "news/"
+weight = 2
+
+[[footer_left]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[footer_left]]
+name = "News"
+url = "news/"
+weight = 2
+
+[[footer_left]]
+name = "License"
+url = "https://github.com/nsfw-filter/nsfw-filter/blob/master/LICENSE"
+weight = 3

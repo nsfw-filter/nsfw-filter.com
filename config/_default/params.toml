@@ -1,0 +1,72 @@
+favicon = "images/favicon.png"
+
+logo = "images/logo.svg"
+logo_darkmode = "images/logo-w.svg"
+
+logo_width = "180px"
+logo_webp = false
+logo_text = "NSFW Filter"
+# theme-mode
+theme_switcher = false
+theme_default = "light" # [light/dark/system]
+
+mainSections = ["news"]
+
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script = ""
+
+# copyright
+theme_copyright = true
+copyright = "Copyright © (2020-2023) by NSFW Filter Maintainers"
+
+footer_menu_left = "Directory"
+footer_menu_middle = "Directory"
+footer_menu_right = "Directory"
+footer_content = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
+
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gif"
+
+[navigation_button]
+enable = true
+label = "Support on Patreon"
+icon = "fa-brands fa-patreon"
+link = "https://www.patreon.com/nsfwfilter"
+
+[metadata]
+keywords = ["NSFW", "Filter", "Browser extension"]
+description = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
+author = "Navendu Pottekkat"
+image = "images/logo.svg"                           # this image will be used as fallback if a page has no image of its own
+
+[plausible]
+enable = true
+domain = "nsfw-filter.com"
+
+# site verifications
+[site_verification]
+google = ""
+bing = ""
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+[[social]]
+title = "github"
+icon = "fa-brands fa-github"
+link = "https://github.com/nsfw-filter/nsfw-filter"
+
+[[social]]
+title = "patreon"
+icon = "fa-brands fa-patreon"
+link = "https://www.patreon.com/nsfwfilter"
+
+[[social]]
+title = "chrome"
+icon = "fa-brands fa-chrome"
+link = "https://chrome.google.com/webstore/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
