@@ -2,7 +2,7 @@
 title: "Pump-up the team morale and celebrate the excellence"
 date: 2020-07-18T10:07:21+06:00
 # post image
-image: "images/blog/post-2.jpg"
+image: "images/news/post-2.jpg"
 # author
 author: "Joseph Gonzalez"
 # post type (regular/featured)

@@ -2,7 +2,7 @@
 title: "Adversus is a web-based dialer and practical CRM solution"
 date: 2020-03-18T10:07:21+06:00
 # post image
-image: "images/blog/post-6.jpg"
+image: "images/news/post-6.jpg"
 # author
 author: "Joseph Gonzalez"
 # post type (regular/featured)

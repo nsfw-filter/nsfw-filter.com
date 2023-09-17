@@ -9,11 +9,6 @@ name = "News"
 url = "news/"
 weight = 2
 
-[[main]]
-name = "Privacy Policy"
-url = "privacy-policy/"
-weight = 3
-
 [[footer_left]]
 name = "Home"
 url = "/"
@@ -25,6 +20,6 @@ url = "news/"
 weight = 2
 
 [[footer_left]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+name = "License"
+url = "https://github.com/nsfw-filter/nsfw-filter/blob/master/LICENSE"
 weight = 3

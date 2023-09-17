@@ -10,7 +10,7 @@ logo_text = "NSFW Filter"
 theme_switcher = false
 theme_default = "light" # [light/dark/system]
 
-mainSections = ["blog"]
+mainSections = ["news"]
 
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script = ""

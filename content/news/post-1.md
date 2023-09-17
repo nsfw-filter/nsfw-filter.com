@@ -2,7 +2,7 @@
 title: "Adversus is a web-based dialer and practical CRM solution"
 date: 2020-08-18T10:07:21+06:00
 # post image
-image: "images/blog/post-1.jpg"
+image: "images/news/post-1.jpg"
 # author
 author: "Awab Husameldin"
 # post type (regular/featured)
@@ -160,7 +160,7 @@ Markdown | Less | Pretty
 
 ##### Image
 
-{{< image src="images/blog/post-6.jpg" caption="an image caption" alt="alter-text" height="425" width="860" position="center" command="fit" option="q100" class="img-fluid" title="image title" >}}
+{{< image src="images/news/post-6.jpg" caption="an image caption" alt="alter-text" height="425" width="860" position="center" command="fit" option="q100" class="img-fluid" title="image title" >}}
 
 
 <hr>

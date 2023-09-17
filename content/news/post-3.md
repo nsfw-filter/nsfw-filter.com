@@ -2,7 +2,7 @@
 title: "screens with built in Present and Dismiss animations."
 date: 2020-06-18T10:07:21+06:00
 # post image
-image: "images/blog/post-3.jpg"
+image: "images/news/post-3.jpg"
 # author
 author: "Awab Husameldin"
 # post type (regular/featured)

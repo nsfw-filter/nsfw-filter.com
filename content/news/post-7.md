@@ -2,7 +2,7 @@
 title: "How and why we decided to launch an EMI scheme for our employees"
 date: 2021-02-18T10:07:21+06:00
 # post image
-image: "images/blog/post-7.jpg"
+image: "images/news/post-7.jpg"
 # author
 author: ""
 # post type (regular/featured)
