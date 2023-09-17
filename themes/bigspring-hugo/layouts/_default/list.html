@@ -24,7 +24,7 @@
                 {{ end }}
               </div>
               <div class="user-info me-3">
-                <p class="fw-500 mb-0"><span class="mx-1">{{i18n `by`}}</span>{{if .Title}}<a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>{{else}}<span class="text-muted">{{i18n `admin`}}</span> {{end}}</p>
+                <p class="fw-500 mb-0"><span class="mx-1">by</span>{{if .Title}}<a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>{{else}}<span class="text-muted">Admin</span> {{end}}</p>
               </div>
               {{end}}
               <div class="fw-500"><i class="far fa-calendar-alt text-dark me-1"></i> {{ time.Format ":date_long" .PublishDate }}</div>
@@ -32,7 +32,7 @@
 
             <h2 class="h3 mb-3"><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h2>
             <p class="mb-4">{{ .Summary }}</p>
-            <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary">{{ i18n `read_more` }}</a>
+            <a href="{{.Permalink}}" title="Read More - {{ .Title }}" class="btn btn-sm btn-primary">Read More</a>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
                 {{ end }}
               </div>
               <div class="user-info me-3">
-                <p class="fw-500 mb-0"><span class="mx-1">{{i18n `by`}}</span>{{if .Title}}<a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>{{else}}<span class="text-muted">{{i18n `admin`}}</span> {{end}}</p>
+                <p class="fw-500 mb-0"><span class="mx-1">by</span>{{if .Title}}<a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>{{else}}<span class="text-muted">Admin</span> {{end}}</p>
               </div>
               {{end}}
               <div class="fw-500"><i class="far fa-calendar-alt text-dark me-1"></i> {{ time.Format ":date_long" .PublishDate }}</div>
@@ -63,7 +63,7 @@
 
             <h3 class="h5"><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h3>
             <p class="mb-4">{{ .Summary }}</p>
-            <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary btn-sm">{{ i18n `read_more` }}</a>
+            <a href="{{.Permalink}}" title="Read More - {{ .Title }}" class="btn btn-sm btn-primary btn-sm">Read More</a>
           </div>
         </div>
       </div>
