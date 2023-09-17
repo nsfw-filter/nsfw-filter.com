@@ -5,6 +5,8 @@
       "body",
       "button",
       "div",
+      "figcaption",
+      "figure",
       "footer",
       "h1",
       "h2",
@@ -96,12 +98,14 @@
       "gy-4",
       "gy-5",
       "gy-6",
-      "h2",
+      "h1",
       "h3",
       "h4",
       "h5",
       "icon",
       "img",
+      "img-center",
+      "img-fluid",
       "is-hoverable",
       "justify-content-center",
       "lead",
@@ -145,7 +149,6 @@
       "pb-4",
       "pe-0",
       "pe-xl-3",
-      "preloader",
       "pt-0",
       "pt-5",
       "py-4",
@@ -168,7 +171,13 @@
       "w-100"
     ],
     "ids": [
-      "navigation"
+      "bug-fixes",
+      "caption-New NSFW Filter logo",
+      "caption-New and improved NSFW Filter popup with whitelist feature",
+      "navigation",
+      "new-look",
+      "whats-next",
+      "whitelist-websites"
     ]
   }
 }

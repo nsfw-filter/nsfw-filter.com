@@ -1,7 +1,7 @@
 ---
 banner:
   title : "Block NSFW content using AI"
-  image : "images/demo.gif"
+  image : "images/demo.png"
   content : "NSFW Filter is a free, open source, and privacy-focused browser extension to block \"not safe for work\" content."
   button:
     icon : "fa-brands fa-chrome"

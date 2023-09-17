@@ -4,7 +4,7 @@ logo = "images/logo.svg"
 logo_darkmode = "images/logo-w.svg"
 
 logo_width = "180px"
-logo_webp = true
+logo_webp = false
 logo_text = "NSFW Filter"
 # theme-mode
 theme_switcher = false
@@ -25,7 +25,7 @@ footer_menu_right = "Directory"
 footer_content = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
 
 [preloader]
-enable = true
+enable = false
 preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gif"
 
 [navigation_button]
