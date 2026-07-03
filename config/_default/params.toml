@@ -30,6 +30,12 @@ preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gi
 
 [navigation_button]
 enable = true
+label = "Add to Chrome"
+icon = "chrome"
+link = "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
+
+[navigation_button_secondary]
+enable = true
 label = "Support on Patreon"
 icon = "patreon"
 link = "https://www.patreon.com/nsfwfilter"
