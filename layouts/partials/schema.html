@@ -67,7 +67,7 @@
 {{- with $imgURL }}{{- $post = merge $post (dict "image" .) -}}{{- end -}}
 {{- $crumbs := slice
   (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.BaseURL)
-  (dict "@type" "ListItem" "position" 2 "name" "News" "item" (absURL "news/"))
+  (dict "@type" "ListItem" "position" 2 "name" "Guides" "item" (absURL "news/"))
   (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
 -}}
 {{- $breadcrumb := dict "@type" "BreadcrumbList" "itemListElement" $crumbs -}}

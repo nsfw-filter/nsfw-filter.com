@@ -2,7 +2,7 @@ baseURL = "https://nsfwfilter.com"
 title = "NSFW Filter - Block NSFW content using AI"
 theme = "bigspring-hugo"
 timeZone = "America/New_York"
-paginate = 6
+paginate = 12
 summaryLength = 10
 enableRobotsTXT = true
 
