@@ -1,0 +1,18 @@
+// chrome-cta renders <a class="btn btn-primary"> inside .content. The theme's
+// content link rules (`.content a` in light, `body.dark .content a` in dark)
+// outrank .btn-primary and paint the button text dark or dim and underlined.
+// Pin the button back to solid white, no underline, in both themes. The
+// body.dark selectors are needed because that rule wins on specificity otherwise.
+.content a.btn,
+body.dark .content a.btn {
+  text-decoration: none;
+}
+
+.content a.btn-primary,
+.content a.btn-primary:hover,
+.content a.btn-primary:focus,
+body.dark .content a.btn-primary,
+body.dark .content a.btn-primary:hover,
+body.dark .content a.btn-primary:focus {
+  color: #fff;
+}
