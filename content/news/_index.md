@@ -1,6 +1,6 @@
 ---
-title: "Guides"
-subtitle: "How to block and blur explicit images in your browser, and how NSFW Filter works under the hood."
-description: "Guides on blocking explicit images in your browser: how NSFW Filter works on-device, how it compares to SafeSearch and paid blockers, and how to set it up on Chrome, Edge, Brave, and Opera."
+title: "Blog"
+subtitle: "Guides, comparisons, and release notes: how to block explicit images, and what's new in NSFW Filter."
+description: "The NSFW Filter blog: guides on blocking and blurring explicit images, how the on-device filter works, comparisons with SafeSearch and paid blockers, and release notes."
 draft: false
 ---
