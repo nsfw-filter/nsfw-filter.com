@@ -4,6 +4,7 @@ theme = "bigspring-hugo"
 timeZone = "America/New_York"
 paginate = 6
 summaryLength = 10
+enableRobotsTXT = true
 
 disableKinds = ["taxonomy"]
 

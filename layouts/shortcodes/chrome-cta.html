@@ -1,0 +1,11 @@
+{{- /* Inline "Add to Chrome" call to action for use inside article markdown.
+       Usage: {{< chrome-cta >}} or {{< chrome-cta label="Get NSFW Filter" caption="none" >}} */ -}}
+{{- $label := .Get "label" | default "Add to Chrome" -}}
+{{- $link := .Get "link" | default "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh" -}}
+{{- $caption := .Get "caption" | default "Free and open source. Runs entirely on your device." -}}
+<div class="chrome-cta text-center my-5">
+  <a href="{{ $link }}" {{ if hasPrefix $link "http" }}target="_blank" rel="noopener"{{ end }} class="btn btn-primary d-inline-flex align-items-center justify-content-center">{{ partial "brand" (dict "name" "chrome" "size" "18" "class" "me-2 align-middle") }}{{ $label }}</a>
+  {{- if and $caption (ne $caption "none") }}
+  <div class="text-muted small mt-2">{{ $caption }}</div>
+  {{- end }}
+</div>

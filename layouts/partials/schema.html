@@ -1,0 +1,87 @@
+{{- /* JSON-LD structured data. Built with dict/slice + jsonify so the output is
+       always valid JSON. Home gets Organization + WebSite + SoftwareApplication;
+       news posts get BlogPosting + BreadcrumbList (+ FAQPage when the page has a
+       `faq` list in front matter). Ratings are the real Chrome Web Store numbers. */ -}}
+{{- $webstore := "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh" -}}
+{{- $orgId := printf "%s#organization" site.BaseURL -}}
+{{- $org := dict
+  "@type" "Organization"
+  "@id" $orgId
+  "name" "NSFW Filter"
+  "url" site.BaseURL
+  "logo" (dict "@type" "ImageObject" "url" (absURL "images/logo.svg"))
+  "sameAs" (slice
+    "https://github.com/nsfw-filter/nsfw-filter"
+    "https://www.patreon.com/nsfwfilter"
+    $webstore)
+-}}
+
+{{- if .IsHome -}}
+{{- $website := dict
+  "@type" "WebSite"
+  "@id" (printf "%s#website" site.BaseURL)
+  "url" site.BaseURL
+  "name" site.Title
+  "publisher" (dict "@id" $orgId)
+-}}
+{{- $app := dict
+  "@type" "SoftwareApplication"
+  "name" "NSFW Filter"
+  "operatingSystem" "Chrome, Microsoft Edge, Brave, Opera"
+  "applicationCategory" "BrowserApplication"
+  "url" site.BaseURL
+  "downloadUrl" $webstore
+  "description" site.Params.metadata.description
+  "isAccessibleForFree" true
+  "offers" (dict "@type" "Offer" "price" "0" "priceCurrency" "USD")
+  "aggregateRating" (dict
+    "@type" "AggregateRating"
+    "ratingValue" "3.9"
+    "ratingCount" "61"
+    "bestRating" "5"
+    "worstRating" "1")
+  "publisher" (dict "@id" $orgId)
+-}}
+{{- $graph := dict "@context" "https://schema.org" "@graph" (slice $org $website $app) -}}
+<script type="application/ld+json">{{ $graph | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- end -}}
+
+{{- $isPost := and (eq .Kind "page") (in (slice "news" "post" "posts") .Section) -}}
+{{- if $isPost -}}
+{{- $imgURL := "" -}}
+{{- with .Params.image -}}
+  {{- with resources.Get . -}}{{- $imgURL = .Permalink -}}{{- end -}}
+{{- end -}}
+{{- $author := .Params.author | default site.Params.metadata.author -}}
+{{- $post := dict
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" (.Params.description | default .Summary)
+  "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "author" (dict "@type" "Person" "name" $author)
+  "publisher" $org
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "url" .Permalink
+-}}
+{{- with $imgURL }}{{- $post = merge $post (dict "image" .) -}}{{- end -}}
+{{- $crumbs := slice
+  (dict "@type" "ListItem" "position" 1 "name" "Home" "item" site.BaseURL)
+  (dict "@type" "ListItem" "position" 2 "name" "News" "item" (absURL "news/"))
+  (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
+-}}
+{{- $breadcrumb := dict "@type" "BreadcrumbList" "itemListElement" $crumbs -}}
+{{- $items := slice $post $breadcrumb -}}
+{{- with .Params.faq -}}
+  {{- $qas := slice -}}
+  {{- range . -}}
+    {{- $qas = $qas | append (dict
+      "@type" "Question"
+      "name" .question
+      "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "FAQPage" "mainEntity" $qas) -}}
+{{- end -}}
+{{- $graph := dict "@context" "https://schema.org" "@graph" $items -}}
+<script type="application/ld+json">{{ $graph | jsonify (dict "indent" "  ") | safeJS }}</script>
+{{- end -}}
