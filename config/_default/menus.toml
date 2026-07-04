@@ -5,7 +5,7 @@ url = ""
 weight = 1
 
 [[main]]
-name = "Blog"
+name = "News"
 url = "news/"
 weight = 2
 
@@ -21,7 +21,7 @@ url = "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpig
 weight = 2
 
 [[footer_left]]
-name = "Blog"
+name = "News"
 url = "news/"
 weight = 3
 
