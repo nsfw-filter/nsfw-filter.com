@@ -16,3 +16,17 @@ body.dark .content a.btn-primary:hover,
 body.dark .content a.btn-primary:focus {
   color: #fff;
 }
+
+// The hero is the primary conversion point, but the theme ships its CTA as an
+// outline button, which reads as secondary. Fill it so the main Add to Chrome
+// matches the solid CTAs in the nav and further down the page.
+.banner .btn-outline-primary {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    background: $color-primary;
+    color: #fff;
+    border-color: $color-primary;
+  }
+}
