@@ -1,0 +1,28 @@
+<!-- plugins + stylesheet -->
+{{ $styles := slice }}
+{{ range site.Params.plugins.css }}
+  {{ if findRE "^http" .link }}
+    <link
+      crossorigin="anonymous"
+      media="all"
+      rel="stylesheet"
+      href="{{ .link | relURL }}"
+      {{ .attributes | safeHTMLAttr }} />
+  {{ else }}
+    {{ $styles = $styles | append (resources.Get .link) }}
+  {{ end }}
+{{ end }}
+{{ $styles := $styles | append (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS) }}
+{{ $styles := $styles | resources.Concat "/css/style.css" }}
+
+
+<!-- Purge CSS in Production -->
+{{ if and hugo.IsProduction site.Params.purge_css }}
+  {{ $styles = $styles | resources.PostCSS | fingerprint "sha256" }}
+  {{ $styles = $styles | resources.PostProcess }}
+{{ end }}
+
+
+<!-- <link rel="stylesheet" href="{{ $styles.RelPermalink }}" /> -->
+
+<style type="text/css">{{$styles.Content | safeCSS}}</style>
