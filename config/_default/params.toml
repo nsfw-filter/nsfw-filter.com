@@ -41,8 +41,8 @@ icon = "patreon"
 link = "https://www.patreon.com/nsfwfilter"
 
 [metadata]
-keywords = ["NSFW", "Filter", "Browser extension"]
-description = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
+keywords = ["NSFW filter", "blur NSFW images", "block explicit images", "open source porn blocker", "on-device content filter", "browser extension"]
+description = "NSFW Filter is a free, open source browser extension that blurs or hides explicit images on any website, using AI that runs entirely on your device."
 author = "Navendu Pottekkat"
 image = "images/demo.png"                           # this image will be used as fallback if a page has no image of its own
 

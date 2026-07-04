@@ -2,7 +2,7 @@
 banner:
   title : "Block NSFW images using AI"
   image : "images/demo.png"
-  content : "NSFW Filter is a free and open source browser extension that hides not-safe-for-work images before you see them. It runs entirely on your device."
+  content : "NSFW Filter is a free, open source browser extension that automatically blurs or hides explicit images on any website, before you see them. It runs entirely on your device, so nothing you browse is ever uploaded."
   button:
     icon : "chrome"
     enable : true
